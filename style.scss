@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+.container {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 97vh;
+}
+.main-card {
+  background-color: hsl(213, 19%, 18%);
+  width: 395px;
+  height: 395px;
+  padding: 35px 30px 30px 30px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  @media (max-width:425px) {
+    width: 320px;
+  }
+}
+.hidden {
+  display: none;
+  height: 0;
+}
+.rating {
+  &__img-container {
+    background-color: hsl(213, 19%, 25%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+  }
+  &__image {
+
+  }
+  &__heading {
+    padding-top: 30px;
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+  }
+  &__text {
+    padding-top: 16px;
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+  }
+  &__grades {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  &__grade-container {
+    background-color: hsl(213, 19%, 25%);
+    color: hsl(217, 12%, 63%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+  }
+  &__grade-container:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    cursor: pointer;
+  }
+  &__grade-checked {
+    color: white;
+    background-color: hsl(217, 12%, 63%);
+  }
+  &__submit {
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    padding: 15px;
+    width: 100%;
+    border: none;
+  }
+  &__submit:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+  }
+}
+
+.thankYou {
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__expression {
+    margin-top: 30px;
+    letter-spacing: .1rem;
+    padding: 10px 20px;
+    background-color: hsl(213, 19%, 25%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(25, 97%, 53%);
+  }
+  &__centered {
+    text-align: center;
+  }
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
